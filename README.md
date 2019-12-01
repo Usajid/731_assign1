@@ -1,4 +1,4 @@
-# EECS 731 Weekend Movie Trip (Assignment # 03)
+# EECS 731 Jimmy Wrangler, Data Explorer (Assignment # 01)
 
 
 ### Quick Note:
