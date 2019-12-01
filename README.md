@@ -38,7 +38,6 @@ repository in GitHub
 ### Datasets:
 
 For this assignment, I took three datasets from the MovieLens Website (https://grouplens.org/datasets/movielens/), namely **Movies, Ratings, and Tags datasets**. First, we do exploratory analysis on each dataset separately, followed by cleaning and merging (those datasets into one) process (Data csv files are in /data/ directory of this repository).
-I used the movie lens small dataset (http://files.grouplens.org/datasets/movielens/ml-latest-small.zip) containing separate files for ratings, tags, and movies. 
 
 ### Process:
 
