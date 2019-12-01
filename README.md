@@ -58,6 +58,16 @@ Then, we **MERGED** the required columns from these dataframes and also **droppe
 
 ![](figs/fig1u.png)
 
+![](figs/fig2u.png)
+
+![](figs/fig3u.png)
+
+![](figs/fig4u.png)
+
+![](figs/fig5u.png)
+
+![](figs/fig6u.png)
+
 movieId | title |	userId |	rating	| tag
 
 187595 |	Solo: A Star Wars Story (2018) |	62.0 |	4.0 |	starwars
