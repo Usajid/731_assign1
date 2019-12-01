@@ -2,7 +2,7 @@
 
 
 ### Quick Note:
-If you are interested in only looking at notebook, please access the notebook in **/notebooks/movieTrip.ipynb**.
+If you are interested in only looking at notebook, please access the notebook in **/notebooks/data_explorer.ipynb**.
 
 /notebooks: Contains the notebook of this assignment.
 
