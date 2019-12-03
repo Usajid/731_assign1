@@ -75,23 +75,18 @@ As seen above, **610** users participated in movie ratings for **9724** unique m
 
 The tag dataset csv file contains tags that are given by the users to different movies. As shown above, **1572 (out of total 9724)** movies have been given total **1460** tags or keywords by **58 (out of total 610)** unique and different users. The tag feature assigned to different movies can be used again for different data modeling tasks (e.g. Clustering based modeling).
 
+# Datsets Feature Engineering and Merging Process
+
+Next, we are merging different datapoints into single dataset that can be used for further process (e.g. Data Modeling for classification, clustering or regression purpose).
+
+First, we **merge** *movies* and *ratings* data frames based on common *movieId* feature, followed by merging the resultant table with tags table based on *movieId* and *userId* featues.
+
 
 ![](figs/fig5u.png)
 
+As we can see that there are some NaN values in the resultant table. So, we **drop** rows with any NaN value.
+
 ![](figs/fig6u.png)
-
-movieId | title |	userId |	rating	| tag
-
-187595 |	Solo: A Star Wars Story (2018) |	62.0 |	4.0 |	starwars
-
-193565 |	Gintama: The Movie (2010) |	184.0 |	3.5 |	anime
-
-193565 |	Gintama: The Movie (2010)	184.0 |	3.5 |	comedy
-
-193565 |	Gintama: The Movie (2010)	184.0 |	3.5 |	gintama
-
-193565 |	Gintama: The Movie (2010) |	184.0|	3.5 |	remaster
-
 
 
 This final dataframe also has some interesting insights, as follows:
@@ -102,7 +97,12 @@ This final dataframe also has some interesting insights, as follows:
 
 **Unique Tags :  1424**
 
-**Based on the above final table, I have also given the clustering process in this assignment notebook, which is not required by the given assignment,thus, optional part that can be skipped/ignored.**
+
+Consequently, number of row are reduced from *1,02,695* to just *3,476* rows, but more cleaner and ready to be used by data modeling process. This final table can be used for any modeling purpose, especially for Cluster based recommendation system. I have also given the clustering process as follows, which is not required by the given assignment,thus, optional part that can be skipped/ignored.
+
+
+
+**Based on the above final table, I have also given the clustering process in this assignment notebook, which is not required by the given assignment, thus, optional part that can be skipped/ignored.**
 
 # Conclusion
 
