@@ -58,13 +58,23 @@ First, we do exploratory analysis on each dataset separately, followed by cleani
 
 As shown above, the movies csv file contains total **9724** unique movies. Consequenly, from the table, it is evident that it provides movies names and their **genre**. We can use the **genre** and **title** features for data modeling purpose (e.g. Clustering similar movies together).
 
-
+**Ratings Dataset Analysis**
 
 ![](figs/fig2u.png)
 
+
+As seen above, **610** users participated in movie ratings for **9724** unique movies. This dataset also has timestamp that may be useful in time based analysis or modeling. But for this assignment, for merging process later, I dropped this feature being not useful (as part of **feautre engineering/cleaning process**).
+
+
+**Tags Dataset Analysis**
+
 ![](figs/fig3u.png)
 
+
 ![](figs/fig4u.png)
+
+The tag dataset csv file contains tags that are given by the users to different movies. As shown above, **1572 (out of total 9724)** movies have been given total **1460** tags or keywords by **58 (out of total 610)** unique and different users. The tag feature assigned to different movies can be used again for different data modeling tasks (e.g. Clustering based modeling).
+
 
 ![](figs/fig5u.png)
 
