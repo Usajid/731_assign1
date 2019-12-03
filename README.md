@@ -6,7 +6,7 @@ If you are interested in only looking at notebook, please access the notebook in
 
 /notebooks: Contains the notebook of this assignment.
 
-/data: Contains the data csv files (movies.csv, ratings.csv, links.csv, tags.csv)
+/data: Contains the data csv files (movies.csv, ratings.csv, tags.csv)
 
 Also, some content of this assignment and my assignment # 03 (Weekend Movie Trip) notebook will be similar, as I have used the same datasets for both assignments.
 
