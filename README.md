@@ -42,13 +42,11 @@ For this assignment, I took three datasets from the MovieLens Website (https://g
 ### Process:
 
 <ul>
-<li>First I loaded and inspected the three data csv files (movies.csv, ratings.csv, links.csv, tags.csv), so I can explore and combine MOVIES, RATINGS, and TAGS information from them to prepare for the similar movies clustering process. (Please see the /notebooks/movieTrip.ipynb for more details)</li>
+<li>First I loaded and inspected the three data csv files (movies.csv, ratings.csv, tags.csv), so I can explore and combine MOVIES, RATINGS, and TAGS information from them for data exploration. (Please see the /notebooks/data_explorer.ipynb for more details)</li>
 <li>Then, we merge the information from these data frames into a new data frame that contains MOVIES, THEIR RATINGS AND TAGS VECTORS.</li>
-<li>Next, we apply K-Means Clsutering Algorithm on this new Data frame to get 100 clusters, each containing similar movies with similar tags and ratings.</li>
-<li>Next, we analyze the qualitative performane of clustered similar movies groups.</li>
  </ul>
 
-*The process and results are detailed as follows, as well as in /notebooks/movieTrip.ipynb notebook.*
+*The process and results are detailed as follows, as well as in /notebooks/data_explorer.ipynb notebook.*
 
 ### Discussion and Results:
 Since we have three different csv files for three different things, i.e. MOVIES, RATINGS, TAGS. So, first we inspected how we can extract and merge the information for the similar movies clustering process.
