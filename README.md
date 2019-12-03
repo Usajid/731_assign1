@@ -49,12 +49,16 @@ For this assignment, I took three datasets from the MovieLens Website (https://g
 *The process and results are detailed as follows, as well as in /notebooks/data_explorer.ipynb notebook.*
 
 ### Discussion and Results:
-Since we have three different csv files for three different things, i.e. MOVIES, RATINGS, TAGS. So, first we inspected how we can extract and merge the information for the similar movies clustering process.
 
-Then, we **MERGED** the required columns from these dataframes and also **dropped NA** valued rows. Finally, the merged dataframe to be used for clustering process was obtained (PLease see /notebooks/movieTrip.ipynb for more details). First five rows of merged dataframe are as follows:
+First, we do exploratory analysis on each dataset separately, followed by cleaning and merging (those datasets into one) process.
 
+**Movies Dataset Analysis:**
 
 ![](figs/fig1u.png)
+
+As shown above, the movies csv file contains total **9724** unique movies. Consequenly, from the table, it is evident that it provides movies names and their **genre**. We can use the **genre** and **title** features for data modeling purpose (e.g. Clustering similar movies together).
+
+
 
 ![](figs/fig2u.png)
 
