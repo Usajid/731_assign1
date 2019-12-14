@@ -44,20 +44,18 @@ For this assignment, I took three datasets from the MovieLens Website (https://g
 <ul>
 <li>First I loaded and inspected the three data csv files (movies.csv, ratings.csv, tags.csv), so I can explore and combine MOVIES, RATINGS, and TAGS information from them for data exploration. (Please see the /notebooks/data_explorer.ipynb for more details)</li>
 <li>Then, we merge the information from these data frames into a new data frame that contains MOVIES, THEIR RATINGS AND TAGS VECTORS.</li>
- <li>Once we have individiual Dataframes and the combined movie dataframe ready, we then draw interesting visualizations that can prove really helpful in getting valuable insights.</li>
- </ul>
 
 *The process and results are detailed as follows, as well as in /notebooks/data_explorer.ipynb notebook.*
 
 ### Discussion and Results:
 
-First, we do exploratory analysis on each dataset separately, followed by cleaning and merging (those datasets into one) process. Then, draw some compelling visualization from three individual dataframes (Movies, Ratings, Tags) as well as from combined/merged dataframe.
+First, we do exploratory analysis on each dataset separately, followed by cleaning and merging (those datasets into one) process.
 
 **Movies Dataset Analysis:**
 
 ![](figs/fig1u.png)
 
-As shown above, the movies csv file contains total **9724** unique movies. Consequenly, from the table, it is evident that it provides movies names and their **genre**. We can use the **genre** and **title** features for data modeling or visualizaing great insights.
+As shown above, the movies csv file contains total **9724** unique movies. Consequenly, from the table, it is evident that it provides movies names and their **genre**. We can use the **genre** and **title** features for data modeling purpose (e.g. Clustering similar movies together).
 
 **Ratings Dataset Analysis**
 
@@ -71,9 +69,11 @@ As seen above, **610** users participated in movie ratings for **9724** unique m
 
 ![](figs/fig3u.png)
 
-The tag dataset csv file contains tags that are given by the users to different movies. As shown above, **1572 (out of total 9724)** movies have been given total **1460** tags or keywords by **58 (out of total 610)** unique and different users. The tag feature assigned to different movies can be used again for **drawing compelling visualizations**.
+![](figs/fig4u.png)
 
-# Datsets Cleaning and Merging Process
+The tag dataset csv file contains tags that are given by the users to different movies. As shown above, **1572 (out of total 9724)** movies have been given total **1460** tags or keywords by **58 (out of total 610)** unique and different users. The tag feature assigned to different movies can be used again for different data modeling tasks (e.g. Clustering based modeling).
+
+# Datsets Feature Engineering and Merging Process
 
 Next, we are merging different datapoints into single dataset that can be used for further process (e.g. Data Modeling for classification, clustering or regression purpose).
 
@@ -96,17 +96,17 @@ This final dataframe also has some interesting insights, as follows:
 **Unique Tags :  1424**
 
 
-Consequently, number of row are reduced from *1,02,695* to just *3,476* rows, but more cleaner and ready to be used by data visualization process.
+Consequently, number of row are reduced from *1,02,695* to just *3,476* rows, but more cleaner and ready to be used by data modeling process. This final table can be used for any modeling purpose, especially for Cluster based recommendation system. I have also given the clustering process as follows, which is not required by the given assignment,thus, optional part that can be skipped/ignored.
 
-# Compelling Visualizations using
-
-1) First compelling visualization that will be helpful is to get **TOP 20 MOVIE TAGS**, as shown in the graph below. It will give us information about the dominant style of movies in the given movie datasets.
-
-
-![](figs/fig4u.png)
-
+**Based on the above final table, I have also given the clustering process in this assignment notebook, which is not required by the given assignment, thus, optional part that can be skipped/ignored.**
 
 
 # Conclusion
 
 This was the basic data science assignment, but, I believe this was the **most important data science asignment**. Because data cleaning/ feature engineering process is vital before doing any data modeling stuff. As there is a famous term in data science and machine/deep learning community for importance of data pre-processing, i.e. GIGO (Garbage In, Garbage Out). So, in my opinion, this assingment was very important and useful for me to understand the baseics of data pre-processing. So, first we loaded three separate datasets, followed by merging them into a single table based on some common features/fields. Along the way, we also did cleaning/feature engineering on these tables e.g. Dropping NaN values.
+
+
+
+# References
+
+1) https://github.com/usajid/731_assign3
