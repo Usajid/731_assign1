@@ -73,7 +73,7 @@ As seen above, **610** users participated in movie ratings for **9724** unique m
 
 The tag dataset csv file contains tags that are given by the users to different movies. As shown above, **1572 (out of total 9724)** movies have been given total **1460** tags or keywords by **58 (out of total 610)** unique and different users. The tag feature assigned to different movies can be used again for different data modeling tasks (e.g. Clustering based modeling).
 
-# Datsets Feature Engineering and Merging Process
+# Datasets Feature Engineering and Merging Process
 
 Next, we are merging different datapoints into single dataset that can be used for further process (e.g. Data Modeling for classification, clustering or regression purpose).
 
